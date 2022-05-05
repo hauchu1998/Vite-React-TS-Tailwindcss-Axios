@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import './App.css'
-import {BrowserRouter, Switch, Route} from 'react-router-dom';
+import {BrowserRouter, Routers as Switch, Route} from 'react-router-dom';
 import Navbar from './components/Navbar';
 import Home from './pages/Home';
 import About from './pages/About';
@@ -11,8 +11,8 @@ function App() {
     <div className="pt-20">
       <Navbar />
       <Switch>
-        <Route path="/" component={Home} exact />
-        <Route path="/about" component={About} exact />
+        <Route path="/" element={<Home/>} />
+        <Route path="/about" element={<About />}/>
       </Switch>
     </div>
     </BrowserRouter>
