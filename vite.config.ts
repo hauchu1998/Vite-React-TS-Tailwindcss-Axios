@@ -39,7 +39,7 @@ export default defineConfig(({ mode }) => {
       }),
       ],
       server: {
-        port: 3030,
+        port: 300,
         proxy: {
           '/api': {
             target: env.VITE_SERVER_URL,
